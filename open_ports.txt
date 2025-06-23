@@ -1,0 +1,13 @@
+# Nmap 7.94SVN scan initiated Mon Jun 23 19:19:52 2025 as: nmap -sS --open -oN open_ports.txt 192.168.1.36/24
+Nmap scan report for 192.168.1.1
+Host is up (0.0040s latency).
+Not shown: 993 closed tcp ports (reset), 3 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT    STATE SERVICE
+21/tcp  open  ftp
+53/tcp  open  domain
+80/tcp  open  http
+443/tcp open  https
+MAC Address: 8C:C7:C3:B4:B4:09 (Netlink ICT)
+
+# Nmap done at Mon Jun 23 19:20:07 2025 -- 256 IP addresses (5 hosts up) scanned in 14.94 seconds
