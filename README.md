@@ -17,6 +17,26 @@ This project demonstrates a basic internal network scan using **Nmap** and optio
 
 - **Nmap** – Network discovery and port scanning tool.
 - **Wireshark** – Packet analyzer for network protocol inspection.
-- **Operating System** – Windows/Linux (tested on both).
+- **Operating System** – Linux (kali)
 
 ---
+
+ ## Port Service	⚠️ Potential Threats
+21	FTP	- Unencrypted credentials
+- Brute force attacks
+- Anonymous login access
+- Remote Code Execution (RCE) in outdated FTP servers
+53	DNS	- DNS amplification (DDoS)
+- Zone transfer data leakage
+- Internal info exposure
+- Cache poisoning
+80	HTTP	- Unencrypted traffic
+- XSS, SQL injection, RCE in vulnerable web apps
+- Sensitive data exposure
+- Server fingerprinting
+443	HTTPS	- SSL/TLS misconfiguration
+- Use of weak or deprecated protocols (e.g., SSLv3, TLS 1.0)
+- Expired or invalid certificates
+- Vulnerabilities like Heartbleed (if OpenSSL is outdated)
+
+- ---
